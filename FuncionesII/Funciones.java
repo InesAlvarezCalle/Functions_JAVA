@@ -2,7 +2,14 @@ package FuncionesII;
 
 public class Funciones {
     public static void mostarVectorInt(int[] vector){
-
+        for (int i = 0; i < vector.length; i++) {
+            if (i < vector.length -1){
+                System.out.print(vector[i] + " - ");
+            } else {
+                System.out.print(vector[i]);
+                System.out.println();
+            }
+        }
     }
 
     public static void mostarMatrizInt(int[][] matriz){

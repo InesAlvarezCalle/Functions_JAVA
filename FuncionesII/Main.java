@@ -2,7 +2,9 @@ package FuncionesII;
 
 public class Main {
    public static void main(String[] args) {
-       int opcion;
+       int opcion, num;
+       int[] vector1;
+
        do {
            System.out.println("1. MostrarVectorInt");
            System.out.println("2. MostrarMatrizInt");
@@ -19,7 +21,17 @@ public class Main {
            opcion = Leer.leerEntero("Seleccione la opcion que desea usar: ");
 
            switch (opcion){
+               case 0:
+                   System.out.println("¡Hasta pronto!");
+                   break;
                case 1:
+                   num = Leer.leerEntero("Introduzca la longitud del vector: ");
+                   vector1 = new int [num];
+                   for (int i = 0; i < num; i++) {
+                       vector1[i] = Leer.leerEntero("Introduzca un número: ");
+                   }
+                   System.out.println("Mostrando vector:");
+                   Funciones.mostarVectorInt(vector1);
                    break;
                case 2:
                    break;
@@ -39,8 +51,8 @@ public class Main {
                    break;
                case 10:
                    break;
-               case 0:
-                   break;
+               default:
+                   System.out.println("ERROR: El número no es correcto");
            }
        } while (opcion != 0);
    }
