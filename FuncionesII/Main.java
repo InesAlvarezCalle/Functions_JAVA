@@ -2,8 +2,9 @@ package FuncionesII;
 
 public class Main {
    public static void main(String[] args) {
-       int opcion, num;
+       int opcion, num1, num2;
        int[] vector1;
+       int[][] matriz1;
 
        do {
            System.out.println("1. MostrarVectorInt");
@@ -25,15 +26,24 @@ public class Main {
                    System.out.println("¡Hasta pronto!");
                    break;
                case 1:
-                   num = Leer.leerEntero("Introduzca la longitud del vector: ");
-                   vector1 = new int [num];
-                   for (int i = 0; i < num; i++) {
+                   num1 = Leer.leerEntero("Introduzca la longitud del vector: ");
+                   vector1 = new int [num1];
+                   for (int i = 0; i < num1; i++) {
                        vector1[i] = Leer.leerEntero("Introduzca un número: ");
                    }
                    System.out.println("Mostrando vector:");
                    Funciones.mostarVectorInt(vector1);
                    break;
                case 2:
+                   num1 = Leer.leerEntero("Introduce el número de filas: ");
+                   num2 = Leer.leerEntero("Introduce el número de columnas: ");
+                   matriz1 = new int [num1][num2];
+                   for (int i = 0; i < num1; i++) {
+                       for (int j = 0; j < num2; j++) {
+                           matriz1[i][j] = Leer.leerEntero("Introduce el número para la posición " + i + j + " : ");
+                       }
+                   }
+                   Funciones.mostarMatrizInt(matriz1);
                    break;
                case 3:
                    break;

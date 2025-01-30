@@ -13,7 +13,15 @@ public class Funciones {
     }
 
     public static void mostarMatrizInt(int[][] matriz){
-
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz[i].length; j++) {
+                System.out.print(matriz[i][j]);
+                if (j < matriz.length -1){
+                    System.out.print(" - ");
+                }
+            }
+            System.out.println();
+        }
     }
 
     public static void copia2Vectores(int[] vector1, int[] vector2){
