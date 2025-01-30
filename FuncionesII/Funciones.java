@@ -24,8 +24,13 @@ public class Funciones {
         }
     }
 
-    public static void copia2Vectores(int[] vector1, int[] vector2){
+    public static int[] copia2Vectores(int[] vectorOrigen, int[] vectorDestino){
+        vectorDestino = new int[vectorOrigen.length];
 
+        for (int i = 0; i < vectorDestino.length; i++) {
+            vectorDestino[i] = vectorOrigen[i];
+        }
+        return vectorDestino;
     }
 
     public static void copiarVector(int[] vector){
