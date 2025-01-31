@@ -25,16 +25,20 @@ public class Funciones {
     }
 
     public static int[] copia2Vectores(int[] vectorOrigen, int[] vectorDestino){
-        vectorDestino = new int[vectorOrigen.length];
+        if(vectorOrigen.length != vectorDestino.length){
+            System.out.println("ERROR: Los vectores no tienen el mismo tamaño.");
+            return vectorDestino;
+        }
 
-        for (int i = 0; i < vectorDestino.length; i++) {
+        for (int i = 0; i < vectorOrigen.length; i++) {
             vectorDestino[i] = vectorOrigen[i];
         }
         return vectorDestino;
     }
 
-    public static void copiarVector(int[] vector){
-
+    public static int[] copiarVector(int[] vector){
+        int[] vectorDestino = new int[vector.length];
+        return copia2Vectores(vector,vectorDestino);
     }
 
     public static boolean igualesVectores(int[] vector1, int[] vector2){
