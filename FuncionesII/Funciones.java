@@ -64,8 +64,13 @@ public class Funciones {
         return vector;
     }
 
-    public static int mediaVector(int vector){
-        return 0;
+    public static double mediaVector(int[] vector){
+        double suma = 0;
+
+        for (int i = 0; i < vector.length; i++) {
+            suma += vector[i];
+        }
+        return suma/vector.length;
     }
 
     public static boolean esMayorEdad(int edad){

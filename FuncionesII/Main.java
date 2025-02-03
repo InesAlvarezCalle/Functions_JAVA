@@ -96,6 +96,12 @@ public class Main {
                    }
                    break;
                case 7:
+                   num1 = Leer.leerEntero("Introduzca de longitud del vactor origen: ");
+                   vector1 = new int[num1];
+                   for (int i = 0; i < num1; i++) {
+                       vector1[i] = Leer.leerEntero("Introduce un número: ");
+                   }
+                   System.out.println("La media del vector es: " + Funciones.mediaVector(vector1));
                    break;
                case 8:
                    break;
