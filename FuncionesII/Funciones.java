@@ -74,7 +74,22 @@ public class Funciones {
     }
 
     public static boolean esMayorEdad(int edad){
-        return false;
+        if(edad >= 18){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static int totalMenores(int[] edades){
+        int contador = 0;
+
+        for(int edad : edades){
+            if(!esMayorEdad(edad) ){
+                contador ++;
+            }
+        }
+        return contador;
     }
 
     public static int fibonnaci(int num){

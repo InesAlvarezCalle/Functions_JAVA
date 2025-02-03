@@ -104,6 +104,13 @@ public class Main {
                    System.out.println("La media del vector es: " + Funciones.mediaVector(vector1));
                    break;
                case 8:
+                   num1 = Leer.leerEntero("Intruduce la cantidad de personas: ");
+                   int[] edades = new int[num1];
+                   for (int i = 0; i < num1; i++) {
+                       edades[i] = Leer.leerEntero("Introduce la edad de la persona " + (i + 1) + ": ");
+                   }
+                   int menores = Funciones.totalMenores(edades);
+                   System.out.println("Número total de menores: " + menores);
                    break;
                case 9:
                    break;
