@@ -113,6 +113,9 @@ public class Main {
                    System.out.println("Número total de menores: " + menores);
                    break;
                case 9:
+                   num1 = Leer.leerEntero("Introduzca el término a calcular: ");
+                   int resultado = Funciones.fibonacci(num1);
+                   System.out.println("El término " + num1 + " de la sucesión de Fibonacci es: " + resultado);
                    break;
                case 10:
                    break;
