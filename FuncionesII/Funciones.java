@@ -42,7 +42,17 @@ public class Funciones {
     }
 
     public static boolean igualesVectores(int[] vector1, int[] vector2){
-        return false;
+        if(vector1.length != vector2.length){
+            return false;
+        }
+
+        for (int i = 0; i < vector1.length; i++) {
+            if(vector1[i] != vector2[i]){
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public static int[] vectorAleatorio(int tamanyo){

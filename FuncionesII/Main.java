@@ -69,6 +69,23 @@ public class Main {
                    Funciones.copiarVector(vectorCopia);
                    break;
                case 5:
+                   num1 = Leer.leerEntero("Introduzca de longitud del vactor origen: ");
+                   vector1 = new int[num1];
+                   for (int i = 0; i < num1; i++) {
+                       vector1[i] = Leer.leerEntero("Introduce un número: ");
+                   }
+
+                   num1 = Leer.leerEntero("Introduzca de longitud del vactor origen: ");
+                   vector2 = new int[num1];
+                   for (int i = 0; i < num1; i++) {
+                       vector2[i] = Leer.leerEntero("Introduce un número: ");
+                   }
+
+                   if(Funciones.igualesVectores(vector1,vector2)){
+                       System.out.println("Los dos vectores son iguales");
+                   } else {
+                       System.out.println("Los dos vectores son diferentes");
+                   }
                    break;
                case 6:
                    break;
