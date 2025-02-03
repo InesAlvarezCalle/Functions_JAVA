@@ -118,6 +118,9 @@ public class Main {
                    System.out.println("El término " + num1 + " de la sucesión de Fibonacci es: " + resultado);
                    break;
                case 10:
+                   num1 = Leer.leerEntero("Introduzca los números a calcular en Fibonacci: ") + 1;
+                   System.out.println("Aproximación de Phi usando Fibonacci:");
+                   Funciones.aproximaPhi(num1);
                    break;
                default:
                    System.out.println("ERROR: El número no es correcto");

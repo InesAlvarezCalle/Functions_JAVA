@@ -101,6 +101,15 @@ public class Funciones {
     }
 
     public static void aproximaPhi(int num){
+        int[] fibonacciSeries = new int[num];
 
+        for (int i = 0; i < num; i++) {
+            fibonacciSeries[i] = Funciones.fibonacci(i);
+        }
+
+        for (int i = 1; i < num; i++) {
+            double cociente = (double) fibonacciSeries[i]/fibonacciSeries[i - 1];
+            System.out.println("Cociente Fibonacci[" + i + "] / Fibonacci[" + i + "] = " + cociente);
+        }
     }
 }
