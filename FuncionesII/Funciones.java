@@ -57,6 +57,10 @@ public class Funciones {
 
     public static int[] vectorAleatorio(int tamanyo){
         int[] vector = new int[tamanyo];
+
+        for (int i = 0; i < tamanyo; i++) {
+            vector[i] = (int)(Math.random() * 100);
+        }
         return vector;
     }
 

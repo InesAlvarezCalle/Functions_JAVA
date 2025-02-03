@@ -88,6 +88,12 @@ public class Main {
                    }
                    break;
                case 6:
+                   num1 = Leer.leerEntero("Intruduce el tamaño del vector: ");
+                   Funciones.vectorAleatorio(num1);
+                   for(int num : Funciones.vectorAleatorio(num1)){
+                       System.out.print(num + " ");
+                       System.out.println();
+                   }
                    break;
                case 7:
                    break;
